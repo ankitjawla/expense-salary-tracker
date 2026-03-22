@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-ios:
+    name: Build iOS App
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build
+        run: |
+          cd ios
+          xcodebuild -project ExpenseSalaryTracker.xcodeproj \
+            -scheme ExpenseSalaryTracker \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -quiet \
+            build
