@@ -95,17 +95,15 @@ struct OnboardingView: View {
                 .padding(.bottom, 28)
             }
         }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Skip") {
-                    completeOnboarding()
-                }
-                .fontWeight(.medium)
-                .foregroundStyle(.white.opacity(0.9))
+        .safeAreaInset(edge: .top, alignment: .trailing, spacing: 0) {
+            Button("Skip") {
+                completeOnboarding()
             }
+            .font(.subheadline.weight(.medium))
+            .foregroundStyle(.white.opacity(0.9))
+            .padding(.trailing, 20)
+            .padding(.top, 4)
         }
-        .navigationBarBackButtonHidden(true)
-        .toolbarBackground(.hidden, for: .navigationBar)
     }
 
     @ViewBuilder

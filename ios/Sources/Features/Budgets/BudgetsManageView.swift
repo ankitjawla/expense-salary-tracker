@@ -50,6 +50,7 @@ struct BudgetsManageView: View {
                     Image(systemName: "plus.circle.fill")
                         .font(.title3)
                 }
+                .buttonStyle(.borderless)
             }
         }
         .sheet(isPresented: $showAdd) {
@@ -191,11 +192,13 @@ private struct AddBudgetFormView: View {
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
                 Button("Cancel") { dismiss() }
+                    .buttonStyle(.borderless)
             }
             ToolbarItem(placement: .confirmationAction) {
                 Button("Save") { save() }
                     .fontWeight(.semibold)
                     .disabled(MoneyFormatting.parseAmount(from: limitText) == nil)
+                    .buttonStyle(.borderless)
             }
         }
     }

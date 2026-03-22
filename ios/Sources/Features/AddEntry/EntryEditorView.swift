@@ -35,18 +35,20 @@ struct EntryEditorView: View {
                         dismiss()
                         onDone()
                     }
+                    .buttonStyle(.borderless)
                 }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Save") { save() }
-                        .fontWeight(.semibold)
-                        .disabled(!form.isValid)
-                }
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItemGroup(placement: .topBarTrailing) {
                     Button(role: .destructive) {
                         confirmDelete = true
                     } label: {
-                        Label("Delete", systemImage: "trash")
+                        Image(systemName: "trash")
                     }
+                    .accessibilityLabel("Delete entry")
+                    .buttonStyle(.borderless)
+                    Button("Save") { save() }
+                        .fontWeight(.semibold)
+                        .disabled(!form.isValid)
+                        .buttonStyle(.borderless)
                 }
             }
             .alert("Something went wrong", isPresented: $showAlert, actions: {

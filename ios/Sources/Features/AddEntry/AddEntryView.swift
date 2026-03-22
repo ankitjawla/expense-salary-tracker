@@ -28,15 +28,20 @@ struct AddEntryView: View {
             .navigationTitle("Add Entry")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Clear") {
+                        form.resetForNewEntry()
+                        quickAddText = ""
+                    }
+                    .foregroundStyle(.secondary)
+                    .font(.callout)
+                    .buttonStyle(.borderless)
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Save") { save() }
                         .fontWeight(.semibold)
                         .disabled(!form.isValid)
-                }
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("Clear") { form.resetForNewEntry(); quickAddText = "" }
-                        .foregroundStyle(.secondary)
-                        .font(.callout)
+                        .buttonStyle(.borderless)
                 }
             }
             .alert("Check your entry", isPresented: $showValidationAlert) {

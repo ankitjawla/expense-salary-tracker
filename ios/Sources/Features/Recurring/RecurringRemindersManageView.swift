@@ -54,7 +54,9 @@ struct RecurringRemindersManageView: View {
                     showAdd = true
                 } label: {
                     Image(systemName: "plus.circle.fill")
+                        .font(.title3)
                 }
+                .buttonStyle(.borderless)
             }
         }
         .sheet(isPresented: $showAdd) {
@@ -112,10 +114,12 @@ private struct AddRecurringFormView: View {
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
                 Button("Cancel") { dismiss() }
+                    .buttonStyle(.borderless)
             }
             ToolbarItem(placement: .confirmationAction) {
                 Button("Save") { save() }
                     .disabled(title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || MoneyFormatting.parseAmount(from: amountText) == nil)
+                    .buttonStyle(.borderless)
             }
         }
     }
