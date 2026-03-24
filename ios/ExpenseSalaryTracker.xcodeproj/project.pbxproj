@@ -10,9 +10,34 @@
 		A10DF9FF2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A10DF9F42EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A10DFA012EEFBD8600D8B590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 910DF9EB2EEFBD8600D8B585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10DF9FA2EEFBD8600D8B590;
+			remoteInfo = ExpenseSalaryTrackerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10DF9FE2EEFBD8600D8B590 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10DF9FF2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A10DF9F42EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExpenseSalaryTrackerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1557FACF2F72223400A41268 /* ExpenseSalaryTrackerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenseSalaryTrackerDebug.entitlements; sourceTree = "<group>"; };
 		910DF9F32EEFBD8600D8B585 /* ExpenseSalaryTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseSalaryTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10DF9F42EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExpenseSalaryTrackerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -72,6 +97,7 @@
 		910DF9EA2EEFBD8600D8B585 = {
 			isa = PBXGroup;
 			children = (
+				1557FACF2F72223400A41268 /* ExpenseSalaryTrackerDebug.entitlements */,
 				910DFA382EEFBF3600D8B585 /* Sources */,
 				A10DF9F52EEFBD8600D8B590 /* ExpenseSalaryTrackerWidget */,
 				910DF9F42EEFBD8600D8B585 /* Products */,
@@ -90,28 +116,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A10DF9FA2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A10DF9FD2EEFBD8700D8B590 /* Build configuration list for PBXNativeTarget "ExpenseSalaryTrackerWidgetExtension" */;
-			buildPhases = (
-				A10DF9F72EEFBD8600D8B590 /* Sources */,
-				A10DF9F82EEFBD8600D8B590 /* Frameworks */,
-				A10DF9F92EEFBD8600D8B590 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A10DF9F52EEFBD8600D8B590 /* ExpenseSalaryTrackerWidget */,
-			);
-			name = ExpenseSalaryTrackerWidgetExtension;
-			packageProductDependencies = (
-			);
-			productName = ExpenseSalaryTrackerWidgetExtension;
-			productReference = A10DF9F42EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		910DF9F22EEFBD8600D8B585 /* ExpenseSalaryTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 910DF9FE2EEFBD8700D8B585 /* Build configuration list for PBXNativeTarget "ExpenseSalaryTracker" */;
@@ -136,6 +140,28 @@
 			productReference = 910DF9F32EEFBD8600D8B585 /* ExpenseSalaryTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A10DF9FA2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10DF9FD2EEFBD8700D8B590 /* Build configuration list for PBXNativeTarget "ExpenseSalaryTrackerWidgetExtension" */;
+			buildPhases = (
+				A10DF9F72EEFBD8600D8B590 /* Sources */,
+				A10DF9F82EEFBD8600D8B590 /* Frameworks */,
+				A10DF9F92EEFBD8600D8B590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A10DF9F52EEFBD8600D8B590 /* ExpenseSalaryTrackerWidget */,
+			);
+			name = ExpenseSalaryTrackerWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ExpenseSalaryTrackerWidgetExtension;
+			productReference = A10DF9F42EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,7 +170,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					910DF9F22EEFBD8600D8B585 = {
 						CreatedOnToolsVersion = 26.1.1;
@@ -175,38 +201,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXContainerItemProxy section */
-		A10DFA012EEFBD8600D8B590 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 910DF9EB2EEFBD8600D8B585 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A10DF9FA2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension */;
-			remoteInfo = ExpenseSalaryTrackerWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A10DF9FE2EEFBD8600D8B590 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				A10DF9FF2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A10DFA002EEFBD8600D8B590 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A10DF9FA2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension */;
-			targetProxy = A10DFA012EEFBD8600D8B590 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		910DF9F12EEFBD8600D8B585 /* Resources */ = {
@@ -241,6 +235,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10DFA002EEFBD8600D8B590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10DF9FA2EEFBD8600D8B590 /* ExpenseSalaryTrackerWidgetExtension */;
+			targetProxy = A10DFA012EEFBD8600D8B590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		910DF9FC2EEFBD8700D8B585 /* Debug */ = {
@@ -301,6 +303,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -357,6 +360,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -367,16 +371,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ExpenseSalaryTracker.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ExpenseSalaryTrackerDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3V7T465498;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Expense & Salary Tracker";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -409,16 +415,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = ExpenseSalaryTracker.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3V7T465498;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Expense & Salary Tracker";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
